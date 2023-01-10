@@ -1,10 +1,18 @@
 # la bibliothèque numpy ne marche pas, je vais donc utiliser la bibliothèque random
 import random
 print("Entrez le nombre de tirages :")
-x = input(int())
-random.seed(486)
-for i in range(8):
-    for i in range(0, 5):
+tirages = []
+x = int(input())
+random.seed(5)
+for i in range(x):
+    print("tirage n°", i+1)
+    for j in range(0, 5):
         n = int(random.uniform(1, 46))
-        print(n)
-    print("___")
+        tirages.append(n)
+    tirages = list(set(tirages))
+    if len(tirages) != 5:
+        n = int(random.uniform(1, 46))
+        tirages.append(n)
+    print(tirages)
+    tirages = []
+    print("____________")
