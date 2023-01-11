@@ -5,7 +5,7 @@ tirages = []
 histo = []
 temp = 0
 x = int(input("Entrez le nombre de tirages :"))
-seed = int(input("Entrez la seed"))
+seed = int(input("Entrez la seed :"))
 random.seed(seed)
 
 for i in range(x):
