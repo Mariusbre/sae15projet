@@ -16,4 +16,4 @@ for i in range(x):
     print(tirages)
     tirages = []
     print("____________")
-# il y'a 1370754 combinaisons possibles par tirages
+# il y'a 1221759 combinaisons possibles par tirages
