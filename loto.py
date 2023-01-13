@@ -29,4 +29,12 @@ plt.xlabel("Numéros")
 plt.ylabel("Nombres de tirages")
 plt.title("Tirages du loto")
 plt.show()
+
+def recherche_naive(tirages, n):
+    for k in range(len(tirages)):
+        if tirages[i] == n:
+            return k
+    return -1
+print(n)
+
 # il y'a 1221759 combinaisons possibles par tirages
