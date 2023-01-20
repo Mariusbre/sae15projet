@@ -30,11 +30,16 @@ plt.ylabel("Nombres de tirages")
 plt.title("Tirages du loto")
 plt.show()
 
-def recherche_naive(tirages, n):
-    for k in range(len(tirages)):
-        if tirages[i] == n:
-            return k
-    return -1
-print(n)
+
+def msort(histo):
+    if len(histo) == 0 or len(histo) == 1:
+        return histo[:len(histo)]
+    halfway = len(histo) // 2
+    list1 = histo[0:halfway]
+    list2 = histo[halfway:len(histo)]
+    newlist1 = msort(list1)
+    newlist2 = msort(list2)
+    newlist = (newlist1 + newlist2)
+    return newlist
 
 # il y'a 1221759 combinaisons possibles par tirages
